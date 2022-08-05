@@ -6,12 +6,15 @@
   <body>
     <div>
       <header>
-        <img
-          src="assests/images/logo.png"
-          alt="logo"
-          height="200px"
-          width="150px"
-        />
+        <a href="index.html">
+          <img
+            src="assests/images/logo.png"
+            alt="logo"
+            height="200px"
+            width="150px"
+          />
+        </a>
+
         <a href="login.html" target="_blank">Login</a>
       </header>
       <div id="content">
@@ -20,7 +23,21 @@
           alt=""
         />
         <br />
-        <a href="payment.html">Book Now</a>
+        <form action="payment.html">
+          <label for="adults">Adults:</label>
+          <input type="number" id="adults" min="1" />
+          <br />
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+          <br />
+          <label for="Fdate">From Date:</label>
+          <input type="date" id="Fdate" /><br />
+          <label for="Tdate">To Date:</label>
+          <input type="date" id="Tdate" /><br />
+          <label for="total">Total:</label>
+          <input type="text" id="total" disabled /><br />
+          <button>Book Now</button>
+        </form>
         <h2>Radisson Blu Hotel</h2>
         <p>RATING</p>
         <p>5 Star</p>
@@ -44,7 +61,7 @@
         <p>Content Div</p>
       </div>
       <footer>
-        <div><a href="/contact.html" target="_blank">Contact Us</a></div>
+        <div><a href="/contact.html">Contact Us</a></div>
         <div>
           <a href="https://www.facebook.com/" target="_blank"
             ><img
