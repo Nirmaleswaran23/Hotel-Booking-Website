@@ -2,10 +2,32 @@
 <html lang="en">
   <head>
     <title>Detail</title>
+    <style>
+      #screen {
+        margin: 0px;
+        background-color: #e0e0e0;
+      }
+      #hotelimage {
+        margin-top: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+      #booking {
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 1%;
+      }
+      #description{
+        margin-top: 1%;
+        margin-bottom: 2%;
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <header>
+    <div id="screen">
+      <header style="background-color: rosybrown">
         <a href="index.html">
           <img
             src="assests/images/logo.png"
@@ -23,9 +45,10 @@
           alt=""
           height="500px"
           width="500px"
+          id="hotelimage"
         />
         <br />
-        <form action="payment.html">
+        <form id="booking" action="payment.html">
           <label for="adults">Adults:</label>
           <input type="number" id="adults" min="1" />
           <br />
@@ -40,29 +63,29 @@
           <input type="text" id="total" disabled /><br />
           <button>Book Now</button>
         </form>
-        <h2>Radisson Blu Hotel</h2>
-        <p>RATING</p>
-        <p>5 Star</p>
-        <p>AMENITIES</p>
-        <ul>
-          <li>Room service</li>
-          <li>Restaurant</li>
-          <li>Business center</li>
-          <li>Fitness center</li>
-          <li>Pool</li>
-        </ul>
-        <h5>DESCRIPTION</h5>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          sapiente, pariatur cupiditate nostrum fugiat doloremque voluptatem
-          rerum provident, eveniet vero molestiae itaque cum rem hic dolor harum
-          ut aspernatur. Aliquid, dolore consequuntur? Commodi vel cum, velit
-          voluptas incidunt culpa officia!
-        </p>
-        <div></div>
-        <p>Content Div</p>
+        <div id="description">
+          <h2>Radisson Blu Hotel</h2>
+          <p>RATING</p>
+          <p>5 Star</p>
+          <p>AMENITIES</p>
+          <ul>
+            <li>Room service</li>
+            <li>Restaurant</li>
+            <li>Business center</li>
+            <li>Fitness center</li>
+            <li>Pool</li>
+          </ul>
+          <h5>DESCRIPTION</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+            sapiente, pariatur cupiditate nostrum fugiat doloremque voluptatem
+            rerum provident, eveniet vero molestiae itaque cum rem hic dolor
+            harum ut aspernatur. Aliquid, dolore consequuntur? Commodi vel cum,
+            velit voluptas incidunt culpa officia!
+          </p>
+        </div>
       </div>
-      <footer>
+      <footer style="background-color: rosybrown">
         <div><a href="/contact.html">Contact Us</a></div>
         <div>
           <a href="https://www.facebook.com/" target="_blank"
