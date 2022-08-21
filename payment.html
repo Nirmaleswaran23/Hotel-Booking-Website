@@ -12,11 +12,13 @@
       }
       .bold {
         font-weight: bold;
+        font-family: cursive;
       }
       #screen {
-        margin: 0px;
         background-color: #e0e0e0;
-        padding-bottom: 90px;
+        height: 100%;
+        width: 100%;
+        font-family: sans-serif;
       }
       header {
         position: fixed;
@@ -33,7 +35,9 @@
         width: 100%;
         height: 50px;
         bottom: 0;
-        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
       #loginLink {
         align-self: flex-end;
@@ -41,13 +45,30 @@
         bottom: 40px;
         right: 25px;
       }
+      #logoImage {
+        display: flex;
+        align-self: flex-start;
+        position: relative;
+        margin-left: 1%;
+      }
       #content {
+        height: 100%;
+      }
+      #hotelImage {
         background-color: rgb(132, 136, 139);
         height: 20%;
         width: 50%;
         margin: auto;
-        margin-top: 2%;
-        margin-bottom: 2%;
+        margin-top: 120px;
+        display: flex;
+      }
+      #hotelDetails {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .hotel {
+        margin: 10px;
       }
       #details {
         margin: 2%;
@@ -55,77 +76,99 @@
       #tariffDetails {
         margin: 2%;
       }
-      .box {
+      #secondHalf {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: rosybrown;
         border: 1px solid black;
         border-radius: 5px;
-        padding: 1% 2% 1% 2%;
+        margin: 2%;
+        margin-top: 50px;
+      }
+      #payNow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       #contactUs {
         width: 10%;
         display: inline-block;
-        position: relative;
-        top: 20px;
-        left: 15px;
+        margin-left: 2%;
       }
       #copyright {
         font-size: 10px;
         text-align: center;
-        bottom: 0px;
       }
       #socialmedia {
         display: flex;
         justify-content: flex-end;
         position: relative;
-        right: 25px;
+        margin-right: 2%;
       }
     </style>
   </head>
   <body>
-    <div id="screen" style="height: 100%; width: 100%">
+    <div id="screen">
       <header style="background-color: rosybrown">
-        <a href="index.html">
-          <img
-            src="assests/images/logo.png"
-            alt="logo"
-            height="60px"
-            width="60px"
-          />
-        </a>
-
+        <div id="logoImage">
+          <a href="index.html">
+            <img
+              src="assests/images/logo.png"
+              alt="logo"
+              height="60px"
+              width="60px"
+            />
+          </a>
+        </div>
         <a id="loginLink" href="login.html" target="_blank">Login</a>
       </header>
       <div id="content">
-        <img
-          src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-          alt=""
-          height="500px"
-          width="500px"
-        />
-        <h2>Radisson Blu Hotel</h2>
-        <p>#38 of 1289 hotels in New Delhi</p>
-        <p>National Highway 8, New Delhi 110017 India</p>
-      </div>
-      <div id="details">
-        <p><span class="bold">Name:</span>John Doe</p>
-        <p><span class="bold">Number of Adults:</span>2</p>
-        <p><span class="bold">Check-in Date:</span>06/06/2020</p>
-        <p><span class="bold">Check-out Date:</span>08/06/2020</p>
-      </div>
-      <div id="tariffDetails">
-        <div class="box">
-          <p>
-            <span class="bold">Tariff Breakdown:</span>Rs 1000 x 2 Adults x 5
-            Nights
-          </p>
-          <p><span class="bold">Total Amount:</span>Rs 10000</p>
+        <div id="hotelImage">
+          <div>
+            <img
+              src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+              alt=""
+              max-height="200px"
+              width="270px"
+            />
+          </div>
+          <div id="hotelDetails">
+            <div class="hotel"><h2 class="bold">Radisson Blu Hotel</h2></div>
+            <div class="hotel"><p>#38 of 1289 hotels in New Delhi</p></div>
+            <div class="hotel">
+              <p>National Highway 8, New Delhi 110017 India</p>
+            </div>
+          </div>
+        </div>
+        <div id="secondHalf">
+          <div id="details">
+            <p><span class="bold">Name:</span>John Doe</p>
+            <br />
+            <p><span class="bold">Number of Adults:</span>2</p>
+            <br />
+            <p><span class="bold">Check-in Date:</span>06/06/2020</p>
+            <br />
+            <p><span class="bold">Check-out Date:</span>08/06/2020</p>
+          </div>
+          <div id="tariffDetails">
+            <div class="box">
+              <p>
+                <span class="bold">Tariff Breakdown:</span>Rs 1000 x 2 Adults x
+                5 Nights
+              </p>
+              <br />
+              <p><span class="bold">Total Amount:</span>Rs 10000</p>
+            </div>
+          </div>
+          <div id="payNow"><a href="">Pay Now</a></div>
         </div>
       </div>
-
-      <a href="">Pay Now</a>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
       <footer style="background-color: rosybrown">
-        <div>
-          <a id="contactUs" href="/contact.html" target="_blank">Contact Us</a>
+        <div id="contactUs">
+          <a href="/contact.html" target="_blank">Contact Us</a>
         </div>
+        <p id="copyright">&copy; 2020 ROOM SEARCH PVT LTD</p>
         <div id="socialmedia">
           <a href="https://www.facebook.com/" target="_blank"
             ><img
@@ -149,7 +192,6 @@
               width="22px"
           /></a>
         </div>
-        <p id="copyright">&copy; 2020 ROOM SEARCH PVT LTD</p>
       </footer>
     </div>
   </body>
